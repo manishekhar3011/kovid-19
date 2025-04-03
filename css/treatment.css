@@ -1,0 +1,130 @@
+#treatment{
+    background: url(http://demo.themenio.com/kovid19/assets/images/shape-b.png);
+    background-size: 100%;
+    background-color: #2766BB;
+}
+
+.treatment_box{
+    margin: 0 auto;
+    width: 1152px;
+    max-width: 100%;
+    display: flex;
+}
+
+.treatment_box .treatment_box_left{
+    text-align: left;
+    max-width: 49%;
+    padding: 180px 0;
+    margin-left: 3%;
+}
+.treatment_box .treatment_box_left h2{
+    font-family: 'Roboto';
+    color: #73E3FF;
+    font-size: 18px;
+    /* font-size: 1.1rem; */
+    line-height: 30px;
+    font-weight: 700;
+}
+.treatment_box .treatment_box_left h1{
+    color: var(--pure);
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+    font-size: 40px;
+    /* font-size: 2.5rem; */
+    line-height: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.treatment_box .treatment_box_left p{
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Roboto';
+    margin-bottom: 16px;
+    color: whitesmoke;
+    font-weight: 300;
+}
+.treatment_box .treatment_box_left p strong{
+    color: var(--pure);
+}
+
+.treatment_box_right{
+    width: 445px;
+    background: var(--primary-dark);
+    color: var(--pure);
+    /* height: 445px; */
+    /* position: relative; */
+    /* top: 50%; */
+    /* transform: translate(20%, 30%); */
+    padding: 40px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    /* line-height: 30px; */
+    margin-right: 10%;
+}
+.treatment_box_right h3{
+    font-size: 16px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.treatment_box_right p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 12px;
+    color: var(--pure);
+}
+.treatment_box_right .specialPara{
+    margin: 20px 0;
+}
+.treatment_box_right .specialPara p{
+    display: flex;
+    justify-content: left;    
+    align-items: baseline;
+    line-height: 23px;
+    margin-bottom: 5px;
+
+}
+
+.treatment_box_right .specialPara p i{
+    margin-right: 12px;
+    font-size: 12px;
+}
+
+
+@media(max-width:935px){
+
+
+    #treatment{
+        padding: 4rem 0;
+    }
+    .treatment_box {
+        /* margin: 0 auto;
+        width: 1152px;
+        max-width: 100%; */
+        flex-direction: column;
+        /* display: flex; */
+        align-items: center;
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+    .treatment_box .treatment_box_left {
+        margin-bottom: 20px;
+        /* text-align: left; */
+        max-width: none;
+        padding: 0;
+        margin: 0 35px;
+        /* margin-left: 8%; */
+    }
+    .treatment_box_right {
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    
+
+}

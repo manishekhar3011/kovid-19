@@ -1,0 +1,247 @@
+#prevention{
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg1-color);
+}
+
+.prevention-header{
+    text-align: center;
+    margin-bottom: 65px;
+}
+.prevention-header h2{
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+}
+.prevention-header h1{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+.prevention-header p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--secondary);
+    width: 70%;
+    margin: auto;
+}
+
+.prevention-card{
+    width: 100%;
+    display: flex;
+    margin-bottom: 70px;
+}
+.prevention-card .prevention-card-body{
+    width: 380px; 
+    margin-right: 15px;
+    max-width: 33%;
+    text-align: center;
+}
+/* .prevention-card .prevention-card-img{
+    
+} */
+.prevention-card .prevention-card-img img{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+.prevention-card .prevention-card-content{
+    font-family: "Roboto",sans-serif;
+}
+.prevention-card .prevention-card-content h2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--secondary);
+    
+}
+.prevention-card .prevention-card-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 10px;
+    color: var(--secondary-dark);
+}
+
+.prevention-btn{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 90px;
+}
+.prevention-btn a i{
+    margin-left: 20px;
+    padding: 4px 4px;
+    text-align: center;
+}
+.prevention-btn .btn:hover{
+    background: var(--primary-dark);
+}
+
+.prevention-btn .btn a:nth-child(1){
+    font-size: 14px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.prevention-btn a:nth-child(2){
+    color: var(--primary);
+    margin-left: 20px;
+}
+.prevention-btn a i{
+    margin-left: 5px;
+    font-size: 14px;
+}
+.prevention-btn a:nth-child(2):hover{
+    color: var(--primary-dark);
+}
+
+
+/******** Steps ********/
+
+.prevention_steps{
+    display: flex;
+    justify-content: space-between;
+    background: var(--pure);
+    padding: 36px 40px 40px 40px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
+}
+
+.prevention_steps .prevention_steps_content{
+    width: 700px;
+    color: var(--secondary-dark);
+}
+.prevention_steps .prevention_steps_content h1{
+    font-size: 30px;
+    color: var(--secondary);
+    margin-bottom: 30px;
+}
+.prevention_steps .prevention_steps_content p{
+    text-align: left;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 23px;
+}
+.prevention_steps .prevention_steps_content p i{
+    margin-right: 10px;
+    color: #3DCA93;
+    font-size: 20px;
+}
+
+/* .prevention_steps .prevention_steps_img{
+    
+} */
+.prevention_steps .prevention_steps_img img{
+    width: 330px;
+    height: 470px;
+    max-width: 100%;
+}
+
+/* Steps to wash hands */
+
+.prevention_wash_hand{
+    font-family: "Roboto",sans-serif;
+    padding:110px 0 0 0;
+}
+.prevention_wash_hand .prevention_wash_hand_header{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.prevention_wash_hand .prevention_wash_hand_header h1{
+    font-size: 30px;
+    line-height: 24px;
+    color: var(--secondary-dark);
+    line-height: 60px;
+}
+
+.prevention_wash_hand .prevention_wash_hand_header a{
+    font-size: 16px;
+    margin-left: 40px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.prevention_wash_hand .prevention_wash_hand_header a i{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.prevention_wash_hand .prevention_wash_hand_header a:hover{
+    color: var(--primary-dark);
+}
+
+.prevention_wash_hand_steps{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.prevention_wash_hand_steps_img{
+    text-align: center;
+    width: 150px;
+}
+.prevention_wash_hand_steps img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.prevention_wash_hand_steps p{
+    font-weight: 500;
+    color: var(--secondary-dark);
+    line-height: 40px;
+}
+
+
+/* Media Query */
+
+
+
+@media(max-width:1030px){
+
+    .prevention_wash_hand_steps {
+        justify-content: space-around;
+    }
+    .prevention_steps .prevention_steps_img img{
+        display: none;
+    }
+    .prevention-header p{
+        width: auto;
+    }
+
+}
+
+@media(max-width: 935px){
+
+    .prevention-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prevention-card .prevention-card-body {
+        max-width: 70%;
+        /* text-align: center; */
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(max-width: 650px){
+    .prevention-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .prevention-btn a{
+        margin-top: 10px;
+    }
+    .prevention_wash_hand .prevention_wash_hand_header h1{
+        font-size: 25px;
+    }
+}

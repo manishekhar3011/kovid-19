@@ -1,0 +1,118 @@
+#about{
+    display: flex;
+    justify-content: space-between;
+    /* background: lime; */
+    padding: 6rem 0;
+}
+
+.about-content{
+    width: 665px;
+    height: 462px;
+    /* background: lightgreen; */
+    text-align: left;
+}
+.about-content h3{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-light-dark);
+    letter-spacing: 1.8px;
+    line-height: 21px;
+}
+.about-content h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: var(--secondary);
+
+}
+.about-content .p1{
+    color: var(--secondary-dark);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin: 15px 0;
+    line-height: 30px;
+}
+.about-content .p1 strong{
+    font-weight: 700;
+}
+.about-content .p2{
+    color: var(--secondary-dark);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin: 15px 0;
+    line-height: 25px;
+}
+.about-content .p3{
+    color: var(--secondary-dark);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    margin: 15px 0;
+    line-height: 25px
+}
+
+.about-question{
+    width: 380px;
+    height: 449px;
+    border: 1px solid #E7E8FF;
+    background: var(--pure);
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
+    /* background: lightsalmon; */
+}
+.about-question ul{
+    /* background: aliceblue; */
+    font-family: "Roboto", sans-serif;
+}
+.about-question li{
+    /* background: aqua; */
+    line-height: 60px;
+    height: 4rem;
+    border-bottom: 1px solid #E7E8FF;
+    transition: 0.5s all ease-in-out;   
+}
+.about-question li:hover a{
+    color: var(--primary-dark);
+}
+.about-question li h1{
+    font-size: 22px;
+    margin-left: 20px;
+    font-weight: 700;
+    color: var(--secondary);
+}
+.about-question li a{
+    font-size: 17px;
+    color: var(--primary);
+    font-weight: 400;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+    /* background: aliceblue; */
+}
+.about-question li i{
+    line-height: 62px;
+    float: right;
+    margin-right: 20px;
+    color: var(--primary);
+}
+
+/* Media Query */
+
+@media(max-width:935px){
+
+    #about{   
+        flex-direction: column;
+    }
+    .about-question{
+        width: 100%;
+    }
+    .about-content {
+        width: auto;
+        height: auto;
+    }
+
+}

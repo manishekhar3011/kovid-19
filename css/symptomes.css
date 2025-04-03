@@ -1,0 +1,174 @@
+#symptomes{
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.symptomes-header{
+    text-align: center;
+    /* font-family: "Roboto", sans-serif; */
+    margin-bottom: 95px;
+}
+.symptomes-header h2{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+}
+.symptomes-header h1{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+.symptomes-header p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--secondary);
+    /* width: 63%; */
+    margin: auto;
+    width: 70%;
+    margin: auto;
+}
+
+.symptomes-card{
+    width: 100%;
+    display: flex;
+    margin-bottom: 70px;
+}
+.symptomes-card .symptomes-card-body{
+    width: 380px;
+    /* border: 2px solid; */
+    margin-right: 15px;
+    /* padding: 15px; */
+    background: white;
+    max-width: 33%;
+}
+.symptomes-card .symptomes-card-img{
+    float: right;
+    margin: -35px 20px;
+}
+.symptomes-card .symptomes-card-img img{
+    border-radius: 50%;
+    width: 80px;
+}
+.symptomes-card .symptomes-card-content{
+    font-family: "Roboto",sans-serif;
+    padding: 20px;
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
+    height: 188px;
+
+}
+.symptomes-card .symptomes-card-content h1{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary);
+}
+.symptomes-card .symptomes-card-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 10px;
+    color: var(--secondary-dark);
+    
+}
+
+.symptomes-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.symptomes-footer .symptomes-footer-left{
+    width: 760px;
+    /* font-size: 17px; */
+    font-family: "Roboto", sans-serif;
+}
+.symptomes-footer .symptomes-footer-left p i{
+    font-size: 40px;
+    color: var(--primary);
+}
+.symptomes-footer .symptomes-footer-left p{
+    line-height: 23px;
+    color: var(--secondary-dark);
+    font-style: italic;
+    /* word-spacing: 0.5px; */
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.symptomes-footer .symptomes-footer-left p strong{
+    color: var(--primary);
+    font-style: normal;
+}
+.symptomes-footer .symptomes-right .btn{
+    font-family: "Roboto", sans-serif;
+}
+.symptomes-footer .symptomes-right .btn:hover{
+    background: var(--primary-light-dark);
+}
+
+
+/* Media querry */
+
+@media(max-width:1030px) {
+    .symptomes-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .symptomes-footer .symptomes-footer-left {
+        margin-bottom: 30px;
+    }
+
+    .symptomes-card .symptomes-card-content {
+        height: 230px;
+    }
+    .symptomes-header p{
+        width: auto;
+    }
+   
+}
+
+
+@media(max-width:935px){
+
+    .symptomes-card {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -25px;
+    }
+
+    .symptomes-card .symptomes-card-body {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 65px;
+    }
+    .symptomes-footer .symptomes-footer-left {
+        width: auto;
+    }
+    .symptomes-card .symptomes-card-content {
+        height: max-content;
+    }
+
+}
+
+@media(max-width:650px){
+    .symptomes-card .symptomes-card-body {
+        /* width: 400px; */
+        /* max-width: 230px; */
+        max-width: 285px;
+        /* margin-bottom: 65px; */
+    }
+}
+
+@media(max-width:450px){
+    .symptomes-card .symptomes-card-body {
+        /* width: 400px; */
+        max-width: 230px;
+        /* margin-bottom: 65px; */
+    }
+}

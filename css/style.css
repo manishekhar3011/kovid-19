@@ -1,0 +1,71 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+:root{
+    --primary: #2A81EA;
+    --primary-light-dark:#2766BB;
+    --primary-dark:#1B47A1;
+    --secondary:#50658E;
+    --secondary-dark:#3D4B69;
+    --bg1-color:#F7F9FE;
+    --pure:#ffffff; 
+    
+}
+
+.btn{
+    font-size: 16px;
+    padding: 12px 20px;
+    font-weight: 700;
+    background: var(--primary);
+    border: none;
+    color: var(--pure);
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.5s ease-out;
+}
+
+.container{
+    /* background: antiquewhite; */
+    margin:auto;
+    /* width: 100vw;
+    max-width: 83%; */
+    max-width: 100vw;
+    width: 83%;
+
+    /* max-width: 100vw;
+    width:80%;
+    margin: auto; */
+}
+
+.bgColor{
+    background: var(--bg1-color);
+    /* background: green; */
+    /* width: 100vw; */
+}
+
+/**********/
+
+/* Media Querry */
+@media(max-width:1030px){
+    .container{
+        width:75%;
+    }
+
+}
+@media(max-width:1030px){
+    .container{
+        width:75%;
+    }
+
+}

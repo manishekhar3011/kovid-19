@@ -1,0 +1,104 @@
+#transmission{
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transmission-header{
+    text-align: center;
+    /* font-family: "Roboto", sans-serif; */
+    margin-bottom: 65px;
+}
+.transmission-header h2{
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: var(--primary);
+}
+.transmission-header h1{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    color: var(--secondary);
+}
+.transmission-header p{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--secondary);
+    /* max-width: 536px; */
+
+}
+
+.tranmission-card{
+    width: 100%;
+    display: flex;
+    margin-bottom: 70px;
+}
+.tranmission-card .tranmission-card-body{
+    box-shadow: 0px 5px 40px 0px rgb(80 101 142 / 8%);
+    width: 380px;
+    /* height: 420px; */
+    /* border: 2px solid; */
+    margin-right: 15px;
+    /* padding: 15px; */
+    background: white;
+    max-width: 33%;
+}
+.tranmission-card .tranmission-card-img{
+    margin-bottom: 0px;
+    border-bottom: 6px solid #9CC2F7;
+}
+.tranmission-card .tranmission-card-img img{
+    height: 205px;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+.tranmission-card .tranmission-card-content{
+    font-family: "Roboto",sans-serif;
+    padding: 20px;
+}
+.tranmission-card .tranmission-card-content h2{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--primary);
+}
+.tranmission-card .tranmission-card-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top: 10px;
+    color: var(--secondary-dark);
+}
+
+.tranmission-card-btn a{
+    font-family: "Roboto", sans-serif;
+}
+.tranmission-card-btn .btn:hover {
+    background: var(--primary-dark);
+}
+
+
+/* Media Query */
+@media(max-width: 935px){
+
+    .tranmission-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tranmission-card .tranmission-card-body {
+        width: 500px;
+        margin-bottom: 20px;
+        max-width: 75%;
+    }
+    .tranmission-card .tranmission-card-img{
+        text-align: center;
+    }
+
+}
